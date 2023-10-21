@@ -10,6 +10,16 @@
     background-color: #ededed;
 }
 
+.confirmation {
+    padding: 5;
+    background-color: transparent;
+}
+
+.confirmation p{
+    margin: 20px;
+    margin-left: 10px;
+}
+
 .custom-navbar {
     background-color: #004d3d; /* Cambia el color de fondo a un color específico */
     color: #FFFFFF; /* Cambia el color del texto a blanco */
