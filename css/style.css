@@ -35,6 +35,22 @@ a.navigation{
     text-decoration: none;
 }
 
+a.registro {
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(19, 69, 196); /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Estilo al hacer hover */
+a.registro:hover {
+    text-decoration: underline; /* Subrayado al hacer hover */
+}
+
+.btn-con-padding {
+    padding: 10px 20px; /* Ajusta los valores de padding según tus preferencias */
+}
+
 header{
     background-color: (--dark-green);
 }
