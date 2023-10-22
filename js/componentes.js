@@ -10,10 +10,8 @@ $(document).ready(function() {
     });
 });
 
-const menu = document.querySelector('#collapse');
-
-menu.addEventListener('click', () => {
-  if (menu.classList.contains('show')) {
-    menu.classList.remove('show');
-  }
+$(document).ready(function() {
+  $("#close").click(function() {
+    $("#DeleteModal").hide()    
+  });
 });

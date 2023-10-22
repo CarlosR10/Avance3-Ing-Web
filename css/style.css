@@ -1,5 +1,6 @@
 :root{
     --dark-green: #004d3d;
+    --light-gray: #FFEBEE;
 }
 
 body{
@@ -49,3 +50,16 @@ header a{
     display: flex;
     align-items: center;
 }
+
+.backicon {
+    color: black;
+    font-size: 5em;
+}
+
+@media screen and (max-width: 768px){
+    .backicon{
+        font-size: 4em;
+    }
+}
+
+
