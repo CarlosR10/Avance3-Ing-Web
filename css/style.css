@@ -38,3 +38,10 @@ body {
     z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 
+.background-image {
+    background-image: url(../img/pexels-pixabay-326281.jpg); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
