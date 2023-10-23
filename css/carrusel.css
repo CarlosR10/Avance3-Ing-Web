@@ -1,0 +1,47 @@
+/*Opciones entre Restaurante y Mis Reservas*/
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.leyenda {
+    font-size: xx-large;
+    position: absolute;
+    top: 30%;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: block; 
+}
+
+/*Imágenes de las opciones (Reserva, Restaurantes*/
+.i-opciones{
+    height: 90%;
+    width: 90%;
+}
+
+.i-opciones{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/*Imágenes del carrusel*/
+.d-item{
+    height: 350px;
+}
+
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+  
+  
+
+
