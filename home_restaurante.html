@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <script src="js/componentes.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home_restaurante.css">
+</head>
+
+<body class="background-image">
+    <!-- Div principal con una clase personalizada "get_in_touch", lo que hace que los divs se presenten en un contenedor blanco en la pagina-->
+    <header class="container-fluid px-2 py-2" style="background-color: var(--dark-green)">
+
+        <nav class="navbar navbar-expand-md d-flex justify-content-between align-items-center">
+            <div class="d-flex mt-2 rounded-circle d-flex align-items-center px-3" id="profile">
+                <img class="rounded-circle" src="img/perfil.jpg" alt="Imagen de perfil" width="50">
+                <!-- Aumenta el tamaño de la imagen -->
+                <span class="ms-5 text-white d-md-inline d-none" style="font-size: 1.2em;">Nombre de Usuario</span>
+                <!-- Cambia el tamaño del texto -->
+            </div>
+            <a class="navbar-brand text-white">
+                <img src="img/logo.png" alt="Logo de la página" width="200">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-controls="navbarNav" aria-label="toggle navigation">
+                <i class="bi bi-list navicon" style="outline: none;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse" style="flex-grow: initial !important;">
+                <ul class="navbar-nav d-flex align-items-center ms-auto">
+                    <li class="nav-item mx-2"><a href="https://www.instagram.com/" class="nav-link"><i class="bi bi-instagram navicon"></i></a></li>
+                    <li class="nav-item mx-2"><a href="https://www.facebook.com/" class="nav-link"><i class="bi bi-facebook navicon"></i></a></li>
+                    <li class="nav-item mx-2"><a href="https://www.twitter.com/" class="nav-link"><i class="bi bi-twitter navicon"></i></a></li>
+                    <li class="nav-item mx-2"><a href="https://www.youtube.com/" class="nav-link"><i class="bi bi-youtube navicon"></i></a></li>
+                    <li class="nav-item mx-5"><a href="https://www.google.com/" class="nav-link"><i class="bi bi-door-open-fill navicon" style="font-size: 1.7em"></i></a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    
+    <div class="get_in_touch">
+        <!-- Contenedor Bootstrap -->
+        <div class="container mt-4">
+            <!-- Fila Bootstrap -->
+            <div class="row">
+                <div class="col-md-4 mb-3 detalles">
+                    <h3>Leños & Carbón</h3>
+                    <p>Restaurante con deliciosos platillos variados, desde mariscos hasta cortes de carne.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3>Ubicación</h3>
+                    <p>Ubicado en Cosway, Isla Flamenco.</p>
+                    <!-- IFrame de Google Maps para mostrar la ubicación -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58228.197203244155!2d-79.38801765552304!3d9.055354248817283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spa!4v1698011870334!5m2!1ses!2spa"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4>Categoría</h4>
+                    <p>Restaurantes de carnes asadas</p>
+                    <h4>Facilidades</h4>
+                    <p>Sillas para niños, acceso para personas con discapacidad.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Segundo div principal con una clase personalizada "get_in_touch2" -->
+    <div class="get_in_touch2">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Menu</h3>
+                    <p>Platillos destacados</p>
+                </div>
+            </div>
+            <div class="row platillos">
+                <!-- Imágenes en columnas con descripciones -->
+                <div class="col-md-2">
+                    <img src="img/ensalada_de_pollo.jpeg" alt="Ensalada de pollo y aguacate" class="img-fluid">
+                    <p>Ensalada de pollo y aguacate.</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/camarones.jpg" alt="Chupe de camarones" class="img-fluid">
+                    <p>Chupé de camarones</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/Arroz y huevo.jpg" alt="Arroz, huevo y aguacate" class="img-fluid">
+                    <p>Arroz, huevo y aguacate picados.</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/carne.jpg" alt="Carne preparada con salsa de soya" class="img-fluid">
+                    <p>Carne preparada con salsa de soya.</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="img/waffles.jpeg" alt="Desyuno de waffles con moras" class="img-fluid">
+                    <p>Desayuno de waffles con moras</p>
+                </div>
+             </div>
+             <!--Opcion para descargar el menu del restaurante-->
+             <div class="row menu">                
+                    <p>Sirivendo desde 1995, para descargar el menú, haga click <a href="txt/Menu.pdf" download>Aquí</a> </p>
+             </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid px-5 py-2" style="background-color: var(--dark-green)">
+        <div class="container-fluid p-3">
+            <p style="text-align: justify; color: white;">
+                © 2023. Todos los derechos reservados. El contenido y los materiales de este sitio web están protegidos por las leyes de 
+                derechos de autor y otras leyes de propiedad intelectual.
+            </p>
+            <p style="text-align: justify; color: white;">
+                Queda prohibida la reproducción, distribución, modificación o 
+                divulgación de cualquier parte de este sitio web, ya sea en forma impresa, electrónica u otro medio, sin el consentimiento 
+                previo por escrito.
+            </p>
+        </div>
+    </footer>
+    <!-- Scripts de Bootstrap para funcionalidad adicional -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

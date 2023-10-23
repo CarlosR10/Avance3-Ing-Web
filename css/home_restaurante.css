@@ -1,0 +1,54 @@
+.get_in_touch2 {
+    max-width: fit-content;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+.get_in_touch2 .row > div {
+    margin-bottom: 15px; /* Ajusta el margen inferior de las columnas */
+    padding: 25px;
+}
+
+.get_in_touch {
+    max-width: fit-content;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px; /* Agrega relleno para controlar el margen interno */
+}
+
+.get_in_touch .row > div {
+    margin-bottom: 15px; /* Ajusta el margen inferior de las columnas */
+    padding: 16px;
+}
+.background-image {
+    background-image: url(../img/pexels-pixabay-326281.jpg); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.platillos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.platillos p{
+    text-align: center;
+}
+
+.menu{
+    text-align: right;
+}
+
+.detalles{
+    text-align: justify;
+}
+
+

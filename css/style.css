@@ -1,3 +1,17 @@
+:root{
+    --dark-green: #004d3d;
+    --light-gray: #FFEBEE;
+    --beige: #8FAA9C;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .get_in_touch {
     max-width: 800px;
     margin: 50px auto;
@@ -6,25 +20,141 @@
     border-radius: 10px;
     background-color: white;
 }
+
+@media screen and (max-width: 768px){
+    .get_in_touch{
+        background-color: none;
+        box-shadow: none;
+    }
+}
+
 .get_in_touch input {
     background-color: #ededed;
 }
 
-.custom-navbar {
-    background-color: #004d3d; /* Cambia el color de fondo a un color específico */
-    color: #FFFFFF; /* Cambia el color del texto a blanco */
+a.navigation{
+    text-decoration: none;
 }
 
+a.registro {
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(19, 69, 196); /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Estilo al hacer hover */
+a.registro:hover {
+    text-decoration: underline; /* Subrayado al hacer hover */
+}
 
-body {
-    background-color: #ffffff;
+.btn-con-padding {
+    padding: 10px 20px; /* Ajusta los valores de padding según tus preferencias */
+}
+
+header{
+    background-color: (--dark-green);
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.navicon{
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+.backicon {
+    color: black;
+    font-size: 5em;
+}
+
+@media screen and (max-width: 768px){
+    .backicon{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bsearch{
+        width: 82%;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .bsearch{
+        width: 62%;
+    }
+}
+
+@media screen and (min-width: 1040px){
+    .bsearch{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .bsearch{
+        width: 40%;
+    }
+}
+
+.vertical-menu {
+    width: 200px;
+    height: 500px;
+    overflow-y: auto;
 }
   
-.custom-header {
-    background-color: #343a40; /* Color de fondo del encabezado */
-    width: 100%; /* Ancho fijo del encabezado */
-    position: fixed; /* Encabezado fijo en la parte superior de la página */
-    padding: 15px; /* Espaciado interno */
-    z-index: 1000; /* Asegura que esté por encima del contenido */
+.vertical-menu div {
+    background-color: var(--beige);
+    color: black;
+    display: block;
+    padding: 12px;
+    height: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+  
+.vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 20px;
+    }
 }
 
+@media screen and (min-width: 769px) {
+    footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .vertical-menu {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vertical-menu {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #filtros {
+        display: none;
+
+    }
+}
