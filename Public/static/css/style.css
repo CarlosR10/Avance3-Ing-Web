@@ -158,3 +158,23 @@ header a{
 
     }
 }
+
+/* message info div */
+#info_msg {
+    transition: opacity 1s ease-out;
+
+}
+
+/* esta una clase especifica para colocar elementos que se usaran como mensajes de confirmacion */
+.none {
+    display: none;
+}
+
+/* boton para recuperar todos los elementos en los search bar */
+#filtro {
+    background-color: #3498db;
+}
+
+#filtro:hover {
+    background-color: #1e6bbd;
+}

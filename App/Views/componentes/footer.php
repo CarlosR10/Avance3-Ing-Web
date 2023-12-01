@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\JJGamer\OneDrive\Pictures\Escritorio\Avance2-Ing-Web\css\style.css">
 </head>
 
 <body>
     <!-- ///// -->
-    <footer class="container-fluid px-5 py-2" style="background-color: var(--dark-green)">
+    <footer class="container-fluid px-5 py-2" style="background-color: var(--dark-green); color: white;">
         <div class="container-fluid p-3">
             <p style="text-align: justify;">
                 © 2023. Todos los derechos reservados. El contenido y los materiales de este sitio web están protegidos por las leyes de 

@@ -25,7 +25,7 @@
 .i-opciones{
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.6);
+    filter: brightness(0.92);
 }
 
 /*Imágenes del carrusel*/
@@ -38,10 +38,4 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
-
-
-
-  
-  
-
 
