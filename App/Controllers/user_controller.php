@@ -28,8 +28,27 @@ class user_controller extends controller{
             //setcookie("register_cookie", "exitoso", time() - 3600, "/");
         }
 
+        if($this->get_alert() == 'TRUEPASS'){
+            // Registration successful
+            $alert = <<<EOT
+            <div id="info_msg" class="alert alert-success" role="alert">
+                <p><strong>¡Has cambiado tu contraseña con éxito!</strong> Ya puedes iniciar sesión.</p>
+            </div>
+            EOT;
+            echo $alert; // mensaje de confirmacion (de registro)
+
+            // eliminar la cookie (personalizada en la clase) de registro exitoso
+            $this->set_alert("FALSE");
+            //setcookie("register_cookie", "exitoso", time() - 3600, "/");
+        }
+
         //Llamar a la vista
         $this->render('index0');
+    }
+
+    public function recovery(){
+        // Llamar a la vista para recuperar contrase
+        $this->render('recuperar_contra');
     }
 
     public function sign_up(){
@@ -144,6 +163,43 @@ class user_controller extends controller{
 
     }
 
+    public function update(){
+        // Cargar el helper result
+        $res = new Result();
+
+        // Receive and process POST data
+        $post_data = file_get_contents('php://input');
+        $body = json_decode($post_data, true); // Get JSON data from POST request
+
+        $email = $body['correo'];
+        $passwd = $body['contraseña'];
+
+        // $email = 'john.doe@example.com';
+        // $passwd = '87654321';
+
+        try{
+            // validar correo y contra
+            $get_user = $this->usuario_model->update_user($email, $passwd);
+
+            // Modificar el result
+            $res->success = true;
+            $res->message = 'La contraseña ha sido cambiado con éxito.';
+
+            // obtener la informacion en formato json y activar la cookie de redireccion
+            echo json_encode($res);
+            // configurar alerta de redireccionamiento
+            $this->set_alert("TRUEPASS");
+        } catch (Exception $e) {
+            // Modificar el result
+            $res->message = 'Ha ocurrido un error al intentar cambiar de contraseña.';
+
+            // obtener la informacion en formato json
+            echo json_encode($res);
+        }
+
+    }
+
 }
 
 ?>
+
