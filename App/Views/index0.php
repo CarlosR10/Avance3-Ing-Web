@@ -43,6 +43,7 @@
                         </div>
                         <div class="col-md-12" style="text-align: center;">
                             <p>¿No tienes una cuenta? <a class="registro" href="<?php echo LOCAL_HOST; ?>/user/sign_up">Regístrate</a></p>
+                            <p>¿Olvidaste tu contraseña? <a class="registro" href="<?php echo LOCAL_HOST; ?>/user/recovery">Haz clic aquí</a></p>
                         </div>
                         
                         <div class="col-5"></div>
@@ -68,6 +69,6 @@
         </div>
     </footer>
 </body>
-<script><?php require_once('Public/static/js/recargar_home.js'); ?> <!-- script que maneja la cookie de inicio de sesion --></script>
+<script> <?php require_once("Public/static/js/recargar_home.js"); ?> <!-- script que maneja la cookie de inicio de sesion  </script>
 <script> <?php require_once("Public/static/js/iniciar_sesion.js"); ?> <!-- script que lee los datos del formulario y redirecciona  </script>
 </html>
