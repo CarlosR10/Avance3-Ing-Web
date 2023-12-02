@@ -44,7 +44,7 @@ class Restaurants_model extends Orm {
     }
 
     public function get_restaurant_by_id($id){
-        $sql = "SELECT id, nombre, descripcion, direccion FROM {$this->table} WHERE id = ?";
+        $sql = "SELECT id, nombre, descripcion, direccion, telefono, provincia, email FROM {$this->table} WHERE id = ?";
         $stmt = $this->db->prepare($sql);
 
         // Bind Param
