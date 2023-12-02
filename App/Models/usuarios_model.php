@@ -17,6 +17,17 @@ class Usuarios_model extends Orm {
         //Fetching all the rows
         return $result->fetch_assoc();
     }
+
+    public function update_user($email, $pass){
+        // UPDATE mi_tabla
+        // SET columna2 = 'nuevo_valor'
+        // WHERE columna1 = 'valor_especifico';
+        $stmt = $this->db->prepare("UPDATE {$this->table} SET pass = ? WHERE email = ?");
+        // Bind Param
+        $stmt->bind_param("ss", $pass, $email); // strings
+        //Executing the statement
+        $stmt->execute();
+    }
     
 }
 ?>
