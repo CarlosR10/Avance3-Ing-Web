@@ -57,10 +57,16 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
+                    <h4>Provincia</h4>
+                    <p><?php echo $parameters['restaurant']['provincia']; ?></p>
                     <h4>Categoría</h4>
                     <p><?php echo $parameters['categorie']['categoria']; ?></p>
                     <h4>Facilidades</h4>
                     <p><?php echo $parameters['facilitie']['facilidad']; ?></p>
+                    <h4>Teléfono</h4>
+                    <p><?php echo $parameters['restaurant']['telefono']; ?></p>
+                    <h4>Email</h4>
+                    <p><?php echo $parameters['restaurant']['email']; ?></p>
                 </div>
             </div>
             
