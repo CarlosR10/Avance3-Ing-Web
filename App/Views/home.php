@@ -17,8 +17,8 @@
     link hemos decidido cargarlo con php (en el turtorial que segui no ocurrio ese error, es raro la verdad)
     <link rel="stylesheet" href="Public/static/css/style.css">-->
     <style> <?php include_once 'Public/static/css/style.css'; include_once 'Public/static/css/carrusel.css'; ?> </style>
-</head>
 
+</head>
 <body>
     <?php require_once('App/Views/componentes/header.php'); ?>
 
@@ -95,5 +95,5 @@
     
     <?php require_once('App/Views/componentes/footer.php'); ?>
 </body>
-<script><?php require_once('Public/static/js/recargar_home.js'); ?> <!-- script que maneja la cookie de inicio de sesion --></script>
+<script> <?php require_once("Public/static/js/recargar_home.js"); ?> <!-- script que maneja la cookie de inicio de sesion  </script>
 </html>
